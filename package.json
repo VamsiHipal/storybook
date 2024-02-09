@@ -1,0 +1,32 @@
+{
+  "name": "hipal-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "analyze": "wca **/*.element.ts --outFile custom-elements.json",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "npm run analyze && storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "lit": "^3.1.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.13",
+    "@storybook/addon-links": "^7.6.13",
+    "@storybook/addon-mdx-gfm": "^7.6.13",
+    "@storybook/blocks": "^7.6.13",
+    "@storybook/web-components": "^7.6.13",
+    "@storybook/web-components-vite": "^7.6.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.6.13",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "web-component-analyzer": "^2.0.0"
+  },
+  "customElements": "custom-elements.json"
+}

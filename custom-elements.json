@@ -1,0 +1,146 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "h-chip",
+      "path": "./src/stories/Components/Chip/Chip.element.ts",
+      "attributes": [
+        {
+          "name": "size",
+          "description": "The size of the chip",
+          "type": "'sm' | 'md' | 'lg'",
+          "default": "\"'md'\""
+        },
+        {
+          "name": "href",
+          "description": "The URL to navigate to",
+          "type": "string",
+          "default": "\"'#'\""
+        },
+        {
+          "name": "avatarURL",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"styles\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "The size of the chip",
+          "type": "'sm' | 'md' | 'lg'",
+          "default": "\"'md'\""
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "description": "The URL to navigate to",
+          "type": "string",
+          "default": "\"'#'\""
+        },
+        {
+          "name": "avatarURL",
+          "attribute": "avatarURL",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "text",
+          "attribute": "text",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "slots": [
+        {
+          "name": "default",
+          "description": "Use this slot for text"
+        },
+        {
+          "name": "avatar",
+          "description": "Use this slot for an avatar"
+        }
+      ]
+    },
+    {
+      "name": "image-resizer",
+      "path": "./src/stories/Components/ImageResizer/ImageResizer.element.ts",
+      "attributes": [
+        {
+          "name": "imageURL",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "default": "\"100%\""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "\"100%\""
+        },
+        {
+          "name": "borderRadius",
+          "description": "The border radius of the image",
+          "type": "'sm' | 'md' | 'lg'",
+          "default": "\"'md'\""
+        },
+        {
+          "name": "objectFit",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"styles\""
+        },
+        {
+          "name": "imageURL",
+          "attribute": "imageURL",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "string",
+          "default": "\"100%\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string",
+          "default": "\"100%\""
+        },
+        {
+          "name": "borderRadius",
+          "attribute": "borderRadius",
+          "description": "The border radius of the image",
+          "type": "'sm' | 'md' | 'lg'",
+          "default": "\"'md'\""
+        },
+        {
+          "name": "objectFit",
+          "attribute": "objectFit",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    }
+  ]
+}
