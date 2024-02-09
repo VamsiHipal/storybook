@@ -143,6 +143,74 @@
       ]
     },
     {
+      "name": "tab-container",
+      "path": "./src/stories/Components/TabContainer/TabContainer.element.ts",
+      "attributes": [
+        {
+          "name": "direction",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "justifyContent",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "alignContent",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "gap",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "gapDirection",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"styles\""
+        },
+        {
+          "name": "direction",
+          "attribute": "direction",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "justifyContent",
+          "attribute": "justifyContent",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "alignContent",
+          "attribute": "alignContent",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "gap",
+          "attribute": "gap",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "gapDirection",
+          "attribute": "gapDirection",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
       "name": "tab-element",
       "path": "./src/stories/Components/TabElement/Tab.element.ts",
       "attributes": [
@@ -150,14 +218,57 @@
           "name": "text",
           "type": "string",
           "default": "\"\""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "selected",
+          "type": "boolean",
+          "default": "false"
         }
       ],
       "properties": [
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"styles\""
+        },
         {
           "name": "text",
           "attribute": "text",
           "type": "string",
           "default": "\"\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "active",
+          "attribute": "selected",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "selectedTab",
+          "type": "() => void",
+          "default": "\"() => {\\n        this.active = !this.active;\\n    }\""
         }
       ]
     }

@@ -62,7 +62,7 @@ const resizer = (width: string) => {
   } else if (widthNumber <= 480) {
     return 'footer-banner';
   } else {
-    return '100%';
+    return 'full';
   }
 }
 
@@ -108,10 +108,11 @@ export class ResizeImage extends LitElement {
       object-fit: ${ifDefined(this.objectFit)};
       height:${this.height}px; 
       width:${this.width}px" 
-      class="skeleton-loader"></div>` 
-    : 
-    html`
+      class="skeleton-loader"></div>`
+      :
+      html`
     <img src=${ifDefined(src)} 
+      alt=${resizer(this.width)}
       height=${ifDefined(this.height)}
       width=${ifDefined(this.width)}
       style="border-radius:${ifDefined(border(this.borderRadius))}; 
