@@ -141,6 +141,25 @@
           "default": "\"\""
         }
       ]
+    },
+    {
+      "name": "tab-element",
+      "path": "./src/stories/Components/TabElement/Tab.element.ts",
+      "attributes": [
+        {
+          "name": "text",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "text",
+          "attribute": "text",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
     }
   ]
 }

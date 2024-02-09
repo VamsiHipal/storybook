@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit + TS</title>
     <link rel="stylesheet" href="./src/index.css" />
-    <script type="module" src="/src/my-element.ts"></script>
     <script
       type="module"
       src="/src/stories/Components/Chip/Chip.element.ts"
@@ -15,21 +14,24 @@
       type="module"
       src="/src/stories/Components/ImageResizer/ImageResizer.element.ts"
     ></script>
+    <script
+    type="module"
+    src="/src/stories/Components/TabElement/Tab.element.ts"
+  ></script>
+  <script
+  type="module"
+  src="/src/stories/Components/TabContainer/TabContainer.element.ts"
+></script>
   </head>
   <body>
-    <h-chip
-      size="md"
-      href="#"
-      avatarurl="https://mighty.tools/mockmind-api/content/human/48.jpg"
-      text="Hello!"
-    >
-    </h-chip>
-    <image-resizer
-      imageURL="https://mighty.tools/mockmind-api/content/human/48.jpg"
-      height="100"
-      width="100"
-      objectFit="cover"
-      borderRadius="2xl"
-    ></image-resizer>
+      <tab-element text="vamsi">
+        <image-resizer slot="image-resizer"
+          imageURL="https://mighty.tools/mockmind-api/content/human/48.jpg"
+          height="200"
+          width="200"
+          objectFit="cover"
+          borderRadius="2xl"
+      ></image-resizer>
+      </tab-element>   
   </body>
 </html>
